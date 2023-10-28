@@ -25,7 +25,7 @@ var nextText = document.getElementsByClassName('next_condition_text');
 
 // get weather Data
 
-async function getData(cityName="cairo"){
+async function getData(cityName="Alexandria"){
     let weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3ea36a4f9ae7469ba19171729232110&q=${cityName}&days=3`);
     let weatherData= await weatherResponse.json();
     
